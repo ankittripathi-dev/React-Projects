@@ -1,0 +1,31 @@
+{
+  "credentials": {
+    "email": "admin@healthcare.com",
+    "password": "admin123"
+  },
+  "user": {
+    "name": "Dr. Sarah Johnson",
+    "role": "Administrator",
+    "avatar": "SJ"
+  },
+  "dashboard": {
+    "patients": 1240,
+    "doctors": 85,
+    "appointments": 320,
+    "clinics": 12
+  },
+  "recentPatients": [
+    { "id": 1, "name": "John Smith", "age": 45, "condition": "Diabetes", "status": "Active", "lastVisit": "2026-01-25" },
+    { "id": 2, "name": "Emily Davis", "age": 32, "condition": "Hypertension", "status": "Active", "lastVisit": "2026-01-24" },
+    { "id": 3, "name": "Michael Brown", "age": 58, "condition": "Cardiac", "status": "Critical", "lastVisit": "2026-01-27" },
+    { "id": 4, "name": "Sarah Wilson", "age": 28, "condition": "Asthma", "status": "Stable", "lastVisit": "2026-01-22" },
+    { "id": 5, "name": "David Lee", "age": 67, "condition": "Arthritis", "status": "Active", "lastVisit": "2026-01-20" }
+  ],
+  "recentDoctors": [
+    { "id": 1, "name": "Dr. Robert Chen", "specialty": "Cardiology", "patients": 156, "status": "Available" },
+    { "id": 2, "name": "Dr. Lisa Park", "specialty": "Neurology", "patients": 142, "status": "In Consultation" },
+    { "id": 3, "name": "Dr. James Miller", "specialty": "Orthopedics", "patients": 128, "status": "Available" },
+    { "id": 4, "name": "Dr. Maria Garcia", "specialty": "Pediatrics", "patients": 189, "status": "On Leave" },
+    { "id": 5, "name": "Dr. William Taylor", "specialty": "Dermatology", "patients": 97, "status": "Available" }
+  ]
+}
