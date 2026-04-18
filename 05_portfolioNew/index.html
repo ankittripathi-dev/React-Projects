@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya Gupta </title>
+    <link rel="stylesheet" href="check.css" />
+    <script src="./sc"></script>
+    <!-- Toastr CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+<!-- jQuery (Required for Toastr) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Toastr JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom Cursor Script -->
+    <script src="cursor.js"></script>
+  </head>
+  <body>
+    <!-- Custom Cursor Elements -->
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+   
+
+
+ 
+
+
+    <div class="portfolio-container">
+      <!-- Profile Section -->
+      <div class="left-section">
+        <div class="button-container">
+          <a href="https://unstop.com/mentor/Aditya09?ref=FCRG4jB" class="book-btn" target="_blank">Book a Session</a>
+        </div>
+
+        <div class="profile">
+        
+          <div class="profile-img-container" id="profileImgContainer" title="Click to watch my intro video">
+            
+            <img src="profile3.jpg" alt="Profile Image" class="profile-img" id="profileImg" />
+            <div class="play-button-overlay">
+           
+              <div class="play-button">
+        
+              </div>
+            </div>
+          </div>
+
+
+
+          
+  
+
+
+          <!-- <img src="myIMG.jpg" alt="Profile Image" class="profile-img" /> -->
+
+          <h2>Aditya Gupta</h2>
+          <p class="tagline">
+            Full-Stack Developer | UI/UX Designer |   Content Creator
+          </p>
+
+
+
+          <!-- Social Media Links -->
+          <div class="social-icons">
+
+
+            <a
+              href="https://leetcode.com/u/rahul860152gupta/"
+              target="_blank"
+              class="circle leetcode"
+            >
+              <i class="fas fa-code"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/adityalkdn/"
+              target="_blank"
+              class="circle linkedin"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+<a
+  href="https://www.youtube.com/@AlgoStrive"
+  target="_blank"
+  class="circle youtube"
+>
+  <i class="fab fa-youtube"></i>
+</a>
+
+            <a href="https://github.com/Adityaguptawebdev"
+   target="_blank"
+   class="circle github">
+  <i class="fab fa-github"></i>
+</a>
+            <!-- <a
+              href="https://instagram.com"
+              target="_blank"
+              class="circle instagram"
+            >
+              <i class="fab fa-instagram"></i> -->
+            </a>
+          </div>
+
+          <div class="button-container">
+            <a href="https://unstop.com/mentor/Aditya09?ref=FCRG4jB" class="book-btn" target="_blank">Book a Session</a>
+          </div>
+
+          <!-- Resume and Certificate Buttons -->
+          <br />
+          <div class="resume-buttons">
+            <button class="btn" id="downloadBtn">
+                Resume <i class="fa-solid fa-download"></i>
+            </button>
+
+            <a class="btn" href="certificates.html">
+                Certificates 🏆
+            </a>
+        </div>
+
+
+        </div>
+
+        <p class="footer-text">
+          Made with <span style="color: #e25555;">❤️</span> by
+          <a href="https://illustrive.netlify.app/" target="_blank" style="color: #00ccff; text-decoration: none;">Aditya Gupta</a> • © 2025
+        </p>
+      </div>
+
+      <!-- Right Section -->
+      <div class="right-section">
+        <div class="floating-navbar">
+          <button class="hamburger" onclick="toggleNavbar()">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul id="navbar-items">
+            <li id="about-container">
+              <a href="#Home"><i class="fa fa-home"></i></a>
+            </li>
+
+
+
+
+
+
+            <li class="section2">
+              <a href="#section2"><i class="fa-solid fa-code"></i></a>
+            </li>
+            <li class="section3">
+              <a href="#section3"><i class="fas fa-graduation-cap"></i></a>
+            </li>
+            <li>
+              <a href="#section4"><i class="fa fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Scrollable Content -->
+        <div class="scrollable-content">
+          <section id="section1">
+            <section id="Home">
+              <div class="about-container">
+
+                <h2>About Me <span class="icon">🖥️</span></h2>
+
+                <p>
+                  I'm Aditya Gupta, a
+                  <strong>Full-Stack Web Developer</strong> and
+                  <strong>Problem Solver</strong> with a passion for creating
+                  seamless web applications and tackling complex challenges.
+                  Currently pursuing <strong>BTech</strong> in
+                  <strong>Computer Science Engineering</strong>, I am also a
+                  <strong>Content Creator</strong> and
+                  <strong>Social Media Manager</strong>, working with 10+
+                  well-known YouTubers to enhance their online presence. Let's
+                  connect and collaborate!
+                </p>
+
+                <div class="skills">
+                  <div class="skill-box">
+                    <i class="fas fa-code"></i>
+                    <h3>Full-Stack Web Developer</h3>
+                  </div>
+                  <div class="skill-box">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Designer</h3>
+                  </div>
+                  <div class="skill-box">
+                    <i class="fas fa-video"></i>
+                    <h3>Content Creator</h3>
+                  </div>
+
+                  <div class="skill-box">
+                    <i class="fas fa-edit"></i>
+                    <h3>Editor</h3>
+                  </div>
+
+
+
+                </div>
+              </div>
+            </section>
+
+
+
+            <div class="skills-container">
+              <div class="skills-wrapper" id="skills">
+                  <div class="skill"><img src="html.png.png" alt="HTML"></div>
+                  <div class="skill"><img src="css.png.png" alt="CSS"></div>
+                  <div class="skill"><img src="js.png.png" alt="JavaScript"></div>
+                  <div class="skill"><img src="react.png.png" alt="Java"></div>
+                  <div class="skill"><img src="node.png.png" alt="React.js"></div>
+                  <div class="skill"><img src="pngwing.com (33).png" alt="Node.js"></div>
+                  <div class="skill"><img src="git.png" alt="MongoDB"></div>
+                  <div class="skill"><img src="java.png.png" alt="SQL"></div>
+                  <div class="skill"><img src="c++.png" alt="Git & GitHub"></div>
+              </div>
+          </div>
+
+
+            <img src="" alt="" />
+          </section>
+          <section id="section2" class="projects">
+              <h2 class="animated-title">My Projects <span class="title-icon">💻</span></h2>
+              <div class="filter-buttons">
+                  <button onclick="filterProjects('all')" class="filter-active">All Projects</button>
+                  <button onclick="filterProjects('webdev')">Web Development</button>
+                  <button onclick="filterProjects('graphic')">Graphic Design</button>
+                  <button onclick="filterProjects('uiux')">UI/UX</button>
+              </div>
+<div class="projects-container">
+
+                <!-- LPU Market Project -->
+                  <div class="project-card webdev" data-category="webdev">
+                    <div class="project-image">
+                      <img src="LPUMarket.png" alt="LPU Market">
+                      <div class="project-overlay">
+                        <div class="tech-stack">
+                          <span>HTML</span>
+                          <span>CSS</span>
+                          <span>JavaScript</span>
+                          <span>Mobile Responsive</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3>LPU Market</h3>
+                      <p>A comprehensive marketplace platform for LPU students to buy and sell items within the campus community.</p>
+                      <div class="project-links">
+                        <a href="https://github.com/Adityaguptawebdev/LPU-Market/tree/main" class="project-btn repo-btn" target="_blank">
+                          <i class="fab fa-github"></i> Repo
+                        </a>
+                        <a href="https://thriving-empanada-d37df9.netlify.app/" class="project-btn live-btn" target="_blank">
+                          <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+               
+
+              
+                  <!-- Apple Vision Pro Project -->
+                  <div class="project-card webdev" data-category="webdev">
+                    <div class="project-image">
+                      <img src="wp1.png" alt="Apple Vision Pro Project">
+                      <div class="project-overlay">
+                        <div class="tech-stack">
+                          <span>HTML</span>
+                          <span>CSS</span>
+                          <span>JavaScript</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3>Apple Vision Pro</h3>
+                      <p>A modern Vision Pro website with smooth animations and interactive elements.</p>
+                      <div class="project-links">
+                        <a href="https://github.com/Adityaguptawebdev/Apple_vision_pro/" class="project-btn repo-btn" target="_blank">
+                          <i class="fab fa-github"></i> Repo
+                        </a>
+                        <a href="https://adityaguptawebdev.github.io/Apple_vision_pro/" class="project-btn live-btn" target="_blank">
+                          <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+<!-- Re-Boxed Project -->
+<div class="project-card webdev" data-category="webdev">
+  <div class="project-image">
+    <img src="re-boxed.png" alt="Re-Boxed E-Commerce">
+    <div class="project-overlay">
+      <div class="tech-stack">
+        <span>React.js</span>
+        <span>CSS</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
+      </div>
+    </div>
+  </div>
+  <div class="project-content">
+    <h3>Re-Boxed</h3>
+    <p>A full-stack e-commerce platform for secure buying and selling of second-hand products, with admin dashboard and role-based authentication.</p>
+    <div class="project-links">
+      <a href="https://github.com/Adityaguptawebdev/mern-backend-main" class="project-btn repo-btn" target="_blank">
+        <i class="fab fa-github"></i> Repo
+      </a>
+      <a href="https://re-boxed.vercel.app/" class="project-btn live-btn" target="_blank">
+        <i class="fas fa-external-link-alt"></i> Live Demo
+      </a>
+    </div>
+  </div>
+</div>
+
+
+              
+                  <!-- Gym Website Project -->
+                  <div class="project-card webdev" data-category="webdev">
+                    <div class="project-image">
+                      <img src="gym.png" alt="Gym Website">
+                      <div class="project-overlay">
+                        <div class="tech-stack">
+                          <span>HTML</span>
+                          <span>CSS</span>
+                          <span>JavaScript</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3>Fitness Hub</h3>
+                      <p>A modern gym website with animations and responsive design for fitness enthusiasts.</p>
+                      <div class="project-links">
+                        <a href="https://github.com/Adityaguptawebdev/gym-website" class="project-btn repo-btn" target="_blank">
+                          <i class="fab fa-github"></i> Repo
+                        </a>
+                        <a href="https://poetic-maamoul-648e3f.netlify.app/" class="project-btn live-btn" target="_blank">
+                          <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- LMS System Project -->
+                  <div class="project-card webdev" data-category="webdev" style="display: none;">
+                    <div class="project-image">
+                      <img src="fullstacklms.png" alt="LMS System">
+                      <div class="project-overlay">
+                        <div class="tech-stack">
+                          <span>React</span>
+                          <span>Node.js</span>
+                          <span>MongoDB</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3>LMS System</h3>
+                      <p>Full-stack Learning Management System with user authentication and course management.</p>
+                      <div class="project-links">
+                        <a href="https://github.com/Adityaguptawebdev/LMS-System-INT222" class="project-btn repo-btn" target="_blank">
+                          <i class="fab fa-github"></i> Repo
+                        </a>
+                        <a href="#" class="project-btn live-btn disabled">
+                          <i class="fas fa-external-link-alt"></i> In Development
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                
+
+                  <!-- UI/UX Project -->
+                  <div class="project-card uiux" data-category="uiux">
+                    <div class="project-image">
+                      <img src="uiux1.png" alt="E-Commerce UI/UX">
+                      <div class="project-overlay">
+                        <div class="tech-stack">
+                          <span>Figma</span>
+                          <span>UI/UX</span>
+                          <span>Prototyping</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3>E-Commerce Deal Aggregator</h3>
+                      <p>Creative UI/UX design for an e-commerce deal aggregation platform with modern interface.</p>
+                      <div class="project-links">
+                        <a href="https://www.figma.com/design/fn17ywZ79NwS6hge7jNaax/HIghFad-Project?node-id=0-1&t=bbR8dP2vnY5TDXi8-1" class="project-btn figma-btn" target="_blank">
+                          <i class="fab fa-figma"></i> Figma Design
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+
+
+
+
+
+
+
+
+              <div class="graphic-design projects-container" style="display: none;" id="graphicDesignContainer">
+                  <img src="./1 (1).png" alt="Graphic 1" onclick="viewImage('./1 (1).png')">
+                  <img src="./graphic2.png" alt="Graphic 1" onclick="viewImage('./graphic2.png')">
+                  <img src="./graphic3.png" alt="Graphic 1" onclick="viewImage('./graphic3.png')">
+                  <img src="./graphic4.png" alt="Graphic 2" onclick="viewImage('./graphic4.png')">
+                  <img src="./graphic5.png" alt="Graphic 3" onclick="viewImage('./graphic5.png')">
+                  <img src="./graphic6.png" alt="Graphic 3" onclick="viewImage('./graphic6.png')">
+              </div>
+              <button class="load-more" style="display: none;" onclick="loadMoreGraphics()" id="loadMoreBtn">See more</button>
+
+              <div class="modal" id="imageModal">
+                  <span class="close-btn" onclick="closeModal()">&times;</span>
+                  <img id="modalImage" src="" alt="Expanded View">
+              </div>
+          </section>
+
+
+          <section id="experience" class="experience-section">
+                <h2 class="animated-title">Experience & Internship <span class="title-icon">🚀</span></h2>
+
+                <!-- TechSaksham AI Internship -->
+                <div class="experience-item">
+                  <div class="experience-image">
+                    <img src="MS.png" alt="TechSaksham AI Internship Certificate" />
+                    <div class="experience-date">
+                      <span>2024</span>
+                      <div class="duration-badge">2 Months</div>
+                    </div>
+                  </div>
+                  <div class="experience-content">
+                    <h3>Intern – AI: Transformative Learning</h3>
+                    <div class="organization-badge">Edunet Foundation</div>
+                    <p>
+                      Participated in Microsoft & SAP's TechSaksham initiative, exploring AI applications across industries. Gained hands-on experience with machine learning concepts, ethical AI principles, and practical implementation through expert-led sessions.
+                    </p>
+                    <div class="experience-skills">
+                      <span>Machine Learning</span>
+                      <span>AI Ethics</span>
+                      <span>Data Analysis</span>
+                    </div>
+                    <div class="experience-details">
+                      <div class="detail-item">
+                        <i class="fas fa-building"></i>
+                        <span>Edunet Foundation</span>
+                      </div>
+                      <div class="detail-item">
+                        <i class="fas fa-university"></i>
+                        <span>Lovely Professional University</span>
+                      </div>
+                      <div class="detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>2024 (2 Months)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- PW Skills Full Stack -->
+                <div class="experience-item">
+                  <div class="experience-image">
+                    <img src="PW.png" alt="PW Skills Full Stack Web Development Certificate" />
+                    <div class="experience-date">
+                      <span>2023-2024</span>
+                      <div class="duration-badge">15 Months</div>
+                    </div>
+                  </div>
+                  <div class="experience-content">
+                    <h3>Full-Stack Developer Trainee – Sigma Batch 1.0</h3>
+                    <div class="organization-badge">PW Skills</div>
+                    <p>
+                      Completed PW Skills' intensive Full-Stack Web Development program (Jan 2023-Mar 2024). Mastered HTML, CSS, JavaScript, React.js, Node.js, and MongoDB while building real-world projects. Developed both technical expertise and collaborative skills through peer programming and mentorship.
+                    </p>
+                    <div class="experience-skills">
+                      <span>React.js</span>
+                      <span>Node.js</span>
+                      <span>MongoDB</span>
+                      <span>JavaScript</span>
+                      <span>HTML/CSS</span>
+                    </div>
+                    <div class="experience-details">
+                      <div class="detail-item">
+                        <i class="fas fa-building"></i>
+                        <span>PW Skills</span>
+                      </div>
+                      <div class="detail-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Remote</span>
+                      </div>
+                      <div class="detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Jan 2023 – Mar 2024</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- More Button -->
+                <div class="experience-more-container">
+                  <a href="experience.html" class="experience-more-btn">
+                    <span>View More Experiences</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </section>
+
+
+
+
+
+          <section id="section3">
+
+            <div class="timeline-container">
+              <h2>Education Timeline<span class="icon">🎒</span></h2>
+
+
+              <div class="timeline-line">
+                <!-- BTech -->
+                <div class="timeline-item" data-delay="0">
+                  <h3>BTech in Computer Science (2023 - Present)</h3>
+<p>Currently pursuing a Bachelor of Technology in Computer Science Engineering, with a strong focus on full-stack web development, programming, and user-centric design.</p>                  <div class="college-name">
+                    <i class="fas fa-university"></i>
+                    <span>Lovely Professional University</span>
+                  </div>
+                  <div class="timeline-date">2023 - Present</div>
+                </div>
+
+                <!-- Diploma -->
+                <div class="timeline-item" data-delay="1">
+                  <h3>Diploma in Electrical Engineering</h3>
+                  <p>Developed technical skills in electrical systems and applications. Gained hands-on experience with various electrical technologies and systems.</p>
+                  <div class="college-name">
+                    <i class="fas fa-university"></i>
+                    <span>Buddha Polytechnic College</span>
+                  </div>
+                  <div class="timeline-date">2020 - 2023</div>
+                </div>
+
+                <!-- Class 12 -->
+                <div class="timeline-item" data-delay="2">
+                  <h3>Class 12th - Science Stream</h3>
+                  <p>Focused on science stream with specialization in Physics, Chemistry, and Mathematics (PCM). Built a strong foundation in scientific principles.</p>
+                  <div class="college-name">
+                    <i class="fas fa-school"></i>
+                    <span>U.P Board</span>
+                  </div>
+                  <div class="timeline-date">2018 - 2020</div>
+                </div>
+
+                <!-- Class 10 -->
+                <div class="timeline-item" data-delay="3">
+                  <h3>Class 10th</h3>
+                  <p>Completed high school with foundational knowledge across various subjects. Developed critical thinking and problem-solving skills.</p>
+                  <div class="college-name">
+                    <i class="fas fa-school"></i>
+                    <span>U.P Board</span>
+                  </div>
+                  <div class="timeline-date">2018</div>
+                </div>
+              </div>
+            </div>
+
+
+          </section>
+
+          <section id="section4" class="contact-section">
+              <div class="message-box">
+                  <h1>Let's Get in Touch!</h1>
+                  <p>Have a question or want to work together? Click the button below to contact us.</p>
+                  <button id="openFormBtn">Contact Us</button>
+              </div>
+
+              <div class="form-container" id="formContainer">
+                  <h2>Contact Us</h2>
+                  <p>Fill out the form and we'll get back to you soon!</p>
+                  <form action="https://formspree.io/f/xyzkpear" method="POST" id="contactForm">
+                      <input type="text" name="name" placeholder="Your Name" required>
+                      <input type="email" name="email" placeholder="Your Email" required>
+                      <textarea name="message" placeholder="Your Message" required></textarea>
+                      <button type="submit" class="submit-btn">Send Message</button>
+                  </form>
+                  <div class="success-message" id="successMessage">✅ Message Sent Successfully!</div>
+              </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleNavbar() {
+        const navbar = document.getElementById("navbar-items");
+        if (navbar.style.display === "flex") {
+          navbar.style.display = "none"; // Hide menu
+        } else {
+          navbar.style.display = "flex"; // Show menu
+        }
+      }
+
+
+
+      let skillsWrapper = document.getElementById("skills");
+        let clone = skillsWrapper.innerHTML;
+        skillsWrapper.innerHTML += clone;
+
+        function continuousScroll() {
+            skillsWrapper.scrollLeft += 1;
+            if (skillsWrapper.scrollLeft >= skillsWrapper.scrollWidth / 2) {
+                skillsWrapper.scrollLeft = 0;
+            }
+        }
+
+        setInterval(continuousScroll, 30);
+
+
+
+
+
+
+
+
+        let currentPage = 1;
+const graphicsPerPage = 3;
+const graphicImages = ["myIMG.jpg", "graphic5.jpg", "graphic6.jpg", "graphic7.jpg"];
+
+function filterProjects(category) {
+    // Update active button
+    document.querySelectorAll(".filter-buttons button").forEach(btn => {
+        btn.classList.remove("filter-active");
+    });
+    event.currentTarget.classList.add("filter-active");
+
+    document.querySelectorAll(".projects-container").forEach(container => {
+        container.style.display = "none";
+    });
+
+    if (category === "graphic") {
+        document.querySelector(".graphic-design").style.display = "grid";
+        document.getElementById("loadMoreBtn").style.display = "block";
+    } else {
+        document.querySelectorAll(".project-card").forEach(project => {
+            // Check if this is the LMS System project (has fullstacklms.png image)
+            const isLMSProject = project.querySelector('img[src="fullstacklms.png"]');
+
+            if (category === "all") {
+                // Show all projects except LMS System
+                if (isLMSProject) {
+                    project.style.display = "none";
+                } else {
+                    project.style.display = "flex";
+                }
+            } else if (category === "webdev") {
+                // Show all webdev projects including LMS System
+                project.style.display = project.classList.contains(category) ? "flex" : "none";
+            } else {
+                // For other categories, show matching projects but not LMS System
+                if (isLMSProject) {
+                    project.style.display = "none";
+                } else {
+                    project.style.display = project.classList.contains(category) ? "flex" : "none";
+                }
+            }
+        });
+        document.querySelector(".projects-container").style.display = "grid";
+        document.getElementById("loadMoreBtn").style.display = "none";
+    }
+
+    // Add animation to visible projects
+    document.querySelectorAll(".project-card").forEach((card, index) => {
+        if (card.style.display === "flex") {
+            card.style.animation = "none";
+            card.offsetHeight; // Trigger reflow
+            card.style.animation = `fadeIn 0.5s ease forwards ${index * 0.1}s`;
+        }
+    });
+}
+
+// Move this outside of filterProjects() to ensure it's always attached
+document.getElementById("loadMoreBtn").addEventListener("click", function () {
+    window.location.href = "certificates.html";
+});
+
+        function viewImage(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("imageModal").style.display = "flex";
+        }
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const openFormBtn = document.getElementById("openFormBtn");
+    const formContainer = document.getElementById("formContainer");
+    const contactForm = document.getElementById("contactForm");
+    const successMessage = document.getElementById("successMessage");
+
+    // Toggle Form Visibility
+    openFormBtn.addEventListener("click", () => {
+        formContainer.classList.toggle("show");
+        if (formContainer.classList.contains("show")) {
+            openFormBtn.textContent = "Hide Form";
+        } else {
+            openFormBtn.textContent = "Contact Us";
+        }
+    });
+
+    // Submit Form & Show Success Message
+    contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(contactForm.action, {
+            method: "POST",
+            body: new FormData(contactForm),
+            headers: { Accept: "application/json" },
+        })
+        .then(() => {
+            successMessage.style.display = "block"; // Show success message
+            setTimeout(() => {
+                successMessage.style.display = "none"; // Hide after 3 sec
+                contactForm.reset(); // Reset form
+                formContainer.classList.remove("show"); // Hide form after success
+                openFormBtn.textContent = "Contact Us"; // Reset button text
+            }, 3000);
+        })
+        .catch(() => alert("Something went wrong!"));
+    });
+});
+
+
+document.getElementById("downloadBtn").addEventListener("click", function () {
+    // Correct file path
+    let resumePath = "./Aditya_Gupta_Resume.pdf";
+
+    // Create an invisible link to trigger download
+    let link = document.createElement("a");
+    link.href = resumePath;
+    link.download = "Aditya_Gupta_Resume.pdf"; // Force download
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Show success notification
+    setTimeout(() => {
+        toastr.success("Download Started!", "Success", { timeOut: 3000 });
+    }, 500);
+});
+
+// Function to toggle experience card content with enhanced animation
+function toggleExperience(header) {
+    const cardWrapper = header.parentElement;
+    const allCards = document.querySelectorAll('.experience-card-wrapper');
+
+    // If clicking on an already active card, just close it
+    if (cardWrapper.classList.contains('active')) {
+        // Close with animation
+        cardWrapper.style.transition = 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+        cardWrapper.classList.remove('active');
+
+        // Update the toggle icon with animation
+        const toggleIcon = header.querySelector('.toggle-icon');
+        toggleIcon.style.transform = 'rotate(0deg)';
+        toggleIcon.textContent = '+';
+
+        return;
+    }
+
+    // Close all other cards first with a slight delay for a nice sequential effect
+    allCards.forEach((card, index) => {
+        if (card !== cardWrapper && card.classList.contains('active')) {
+            setTimeout(() => {
+                card.classList.remove('active');
+                card.querySelector('.toggle-icon').textContent = '+';
+            }, 100 * index);
+        }
+    });
+
+    // Add a small delay before opening the clicked card for better visual effect
+    setTimeout(() => {
+        // Toggle active class on the card wrapper with enhanced animation
+        cardWrapper.style.transition = 'all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+        cardWrapper.classList.add('active');
+
+        // Update the toggle icon with animation
+        const toggleIcon = header.querySelector('.toggle-icon');
+        toggleIcon.style.transform = 'rotate(45deg)';
+        toggleIcon.textContent = '×';
+
+        // Scroll to the card if it's not fully visible
+        setTimeout(() => {
+            const rect = cardWrapper.getBoundingClientRect();
+            const isVisible = (
+                rect.top >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            );
+
+            if (!isVisible) {
+                cardWrapper.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }, 300);
+    }, 200);
+}
+
+// Add entrance animation for experience items
+document.addEventListener('DOMContentLoaded', function() {
+    // Add entrance animation to experience items
+    const experienceItems = document.querySelectorAll('.experience-item');
+    experienceItems.forEach((item, index) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(30px)';
+
+        setTimeout(() => {
+            item.style.transition = 'opacity 0.6s ease, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            item.style.opacity = '1';
+            item.style.transform = 'translateY(0)';
+        }, 300 + (index * 200));
+    });
+
+    // Animate timeline items when they come into view
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    // Create an intersection observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            // If the element is in the viewport
+            if (entry.isIntersecting) {
+                // Add the animation class
+                entry.target.style.opacity = '0';
+                entry.target.style.transform = 'translateY(30px) translateX(-10px)';
+                entry.target.style.filter = 'blur(5px)';
+
+                // Get the delay from the data attribute
+                const delay = entry.target.getAttribute('data-delay') || 0;
+
+                // Apply the animation with the delay
+                setTimeout(() => {
+                    entry.target.style.transition = 'all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0) translateX(0)';
+                    entry.target.style.filter = 'blur(0)';
+                }, delay * 200);
+
+                // Unobserve the element after animating it
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 }); // Trigger when 20% of the item is visible
+
+    // Observe each timeline item
+    timelineItems.forEach(item => {
+        observer.observe(item);
+    });
+});
+
+  
+
+  
+    </script>
+  </body>
+</html>
