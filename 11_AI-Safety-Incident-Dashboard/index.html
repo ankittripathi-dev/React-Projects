@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Safety Incident Dashboard - Monitor, track, and report AI safety incidents">
+    <title>AI Safety Incident Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header role="banner">
+        <div class="header-left">
+            <h1>AI Safety Incident Dashboard</h1>
+            <p class="header-subtitle">Monitor, track, and report AI safety incidents</p>
+        </div>
+        <button id="report-cta" class="report-cta-btn" aria-label="Report new incident">
+            Report Incident <span class="report-icon">+</span>
+        </button>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="controls">
+            <div class="filter-controls">
+                <h2 id="filter-heading">Filter by Severity</h2>
+                <div class="filter-buttons" role="group" aria-label="Filter incidents by severity">
+                    <button class="filter-btn active" data-severity="all" aria-pressed="true">All Incidents</button>
+                    <button class="filter-btn" data-severity="Low" aria-pressed="false">Low</button>
+                    <button class="filter-btn" data-severity="Medium" aria-pressed="false">Medium</button>
+                    <button class="filter-btn" data-severity="High" aria-pressed="false">High</button>
+                </div>
+            </div>
+
+            <div class="sort-controls">
+                <h2 id="sort-heading">Sort by Date</h2>
+                <label for="sort-select" class="sr-only">Sort incidents by date</label>
+                <select id="sort-select" aria-labelledby="sort-heading">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                </select>
+                <p class="sort-description">Change the order of incidents based on reported date</p>
+            </div>
+        </section>
+
+        <section class="incidents-container" aria-labelledby="incidents-heading">
+            <div class="section-header">
+                <h2 id="incidents-heading">Incident Reports</h2>
+                <div class="incident-count" aria-live="polite">
+                    <span id="incident-count-number">3</span> incidents found
+                </div>
+            </div>
+            <div id="incidents-list" role="region" aria-live="polite">
+                <!-- Incidents will be dynamically added here -->
+                <div class="no-incidents-message">No incidents found matching your criteria</div>
+            </div>
+        </section>
+
+        <section id="report-section" class="add-incident" aria-labelledby="form-heading">
+            <h2 id="form-heading">Report New Incident</h2>
+            <p class="form-description">Use this form to report a new AI safety incident. All fields are required.</p>
+            <form id="incident-form">
+                <div class="form-group">
+                    <label for="incident-title">Incident Title</label>
+                    <input type="text" id="incident-title" placeholder="Enter a descriptive title" required
+                           aria-describedby="title-hint">
+                    <div id="title-hint" class="sr-only">Provide a clear, concise title for the incident</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="incident-description">Description</label>
+                    <textarea id="incident-description" rows="4" placeholder="Provide details about the incident..." required
+                              aria-describedby="description-hint"></textarea>
+                    <div id="description-hint" class="sr-only">Describe what happened, when it occurred, and any relevant details</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="incident-severity">Severity Level</label>
+                    <select id="incident-severity" required aria-describedby="severity-hint">
+                        <option value="">Select severity level</option>
+                        <option value="Low">Low - Minor Impact</option>
+                        <option value="Medium">Medium - Moderate Impact</option>
+                        <option value="High">High - Critical Impact</option>
+                    </select>
+                    <div id="severity-hint" class="sr-only">Choose the appropriate severity level based on the incident's impact</div>
+                </div>
+
+                <div class="submit-container">
+                    <button type="submit" class="submit-btn">Submit Incident Report</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2025 AI Safety Incident Dashboard</p>
+            <p>A tool for responsible AI development</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
