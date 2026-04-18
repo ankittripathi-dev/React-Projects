@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* === Background & Text === */
+    --background: 0 0% 0%;          /* Black */
+    --foreground: 0 0% 95%;         /* White text */
+
+    /* === Cards / Sections / Inputs === */
+    --card: 140 33% 26%;             /* Dark green #3A6F43 */
+    --card-foreground: 0 0% 95%;     /* White text */
+    --input: 140 33% 26%;            /* Dark green input background */
+    --border: 140 33% 26%;           /* Dark green border */
+
+    /* === Primary Color === */
+    --primary: 150 38% 51%;          /* Medium green #59AC77 */
+    --primary-foreground: 0 0% 100%; /* White text */
+    --primary-glow: 150 38% 41%;     /* Slightly darker green for hover/glow */
+
+    /* === Radius === */
+    --radius: 0.75rem;
+
+    /* === Shadows === */
+    --shadow-sm: 0 2px 4px hsl(0 0% 0% / 0.5);
+    --shadow-md: 0 4px 12px hsl(0 0% 0% / 0.6);
+    --shadow-lg: 0 10px 30px hsl(0 0% 0% / 0.7);
+    --shadow-glow: 0 0 40px hsl(150 38% 51% / 0.5);
+
+    /* === Gradients === */
+    --gradient-primary: linear-gradient(135deg, hsl(150 38% 51%), hsl(140 33% 26%));
+    --gradient-card: linear-gradient(180deg, hsl(140 33% 26%), hsl(0 0% 0%));
+  }
+
+  /* === Global Dark Mode (optional) === */
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 95%;
+
+    --card: 140 33% 20%;
+    --card-foreground: 0 0% 95%;
+
+    --primary: 150 38% 41%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 140 33% 26%;
+
+    --border: 140 33% 20%;
+    --input: 140 33% 20%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(150 38% 41%), hsl(140 33% 20%));
+    --gradient-card: linear-gradient(180deg, hsl(140 33% 20%), hsl(0 0% 0%));
+
+    --shadow-sm: 0 2px 4px hsl(0 0% 0% / 0.6);
+    --shadow-md: 0 4px 12px hsl(0 0% 0% / 0.7);
+    --shadow-lg: 0 10px 30px hsl(0 0% 0% / 0.8);
+    --shadow-glow: 0 0 40px hsl(150 38% 41% / 0.5);
+  }
+
+  /* === Global Styles === */
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  /* === Card / Section === */
+  .card {
+    @apply bg-card text-card-foreground rounded-[var(--radius)] shadow-md p-4;
+  }
+
+  /* === Buttons === */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground rounded-[var(--radius)] px-4 py-2 font-semibold shadow-sm;
+    transition: all 0.2s ease-in-out;
+  }
+  .btn-primary:hover {
+    background-color: hsl(var(--primary-glow));
+    box-shadow: 0 0 8px hsl(var(--primary-glow) / 0.7);
+  }
+
+  /* === Inputs / Textareas / Selects === */
+  input,
+  textarea,
+  select {
+    @apply bg-input text-foreground border border-border rounded-[var(--radius)] px-3 py-2 shadow-sm;
+  }
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px hsl(var(--primary-glow) / 0.5);
+  }
+  ::placeholder {
+    color: hsl(var(--card-foreground) / 0.6);
+  }
+
+  /* === Links / Accent === */
+  a {
+    color: hsl(var(--primary));
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
