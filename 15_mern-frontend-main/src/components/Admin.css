@@ -1,0 +1,38 @@
+/* Admin Component Styles */
+.admin-nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #e3f0ff 0%, #f8fafc 100%);
+  padding: 1.5rem 0 1.5rem 0;
+  border-radius: 1.2rem;
+  margin: 2rem auto 2.5rem auto;
+  max-width: 900px;
+  box-shadow: 0 2px 12px rgba(30,60,114,0.06);
+}
+.admin-nav a {
+  color: #1e3c72;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.6rem;
+  transition: background 0.2s, color 0.2s;
+}
+.admin-nav a:hover, .admin-nav a.active {
+  background: #38c6ff;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .admin-nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0.2rem 1rem 0.2rem;
+    max-width: 98vw;
+  }
+  .admin-nav a {
+    width: 100%;
+    text-align: center;
+  }
+} 
